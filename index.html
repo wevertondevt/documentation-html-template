@@ -1,9 +1,12 @@
 <!DOCTYPE html>
-<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
-<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
-<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if lt IE 7 ]>
+<html class="ie ie6" lang="pt-br"> <![endif]-->
+<!--[if IE 7 ]>
+<html class="ie ie7" lang="pt-br"> <![endif]-->
+<!--[if IE 8 ]>
+<html class="ie ie8" lang="pt-br"> <![endif]-->
 <!--[if (gte IE 9)|!(IE)]><!-->
-<html lang="en">
+<html lang="pt-br">
 <!--<![endif]-->
 
 <head>
@@ -15,7 +18,7 @@
     <meta name="author" content="">
     <meta name="keywords" content="">
 
-    <title>Item Name | Documentation by Author Name</title>
+    <title> Documentação </title>
 
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
 
@@ -34,793 +37,858 @@
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+
     <![endif]-->
 
 </head>
 
 <body>
-    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-chevron-up" aria-hidden="true"></i></button>
+<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-chevron-up" aria-hidden="true"></i>
+</button>
 
-    <script>
-        var mybutton = document.getElementById("myBtn");
-        window.onscroll = function() {scrollFunction()};
-        function scrollFunction() {
-            if (document.body.scrollTop > 1000 || document.documentElement.scrollTop > 1000) {
-                mybutton.style.display = "block";
-            } else {
-                mybutton.style.display = "none";
-            }
+<script>
+    var mybutton = document.getElementById("myBtn");
+    window.onscroll = function () {
+        scrollFunction()
+    };
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 1000 || document.documentElement.scrollTop > 1000) {
+            mybutton.style.display = "block";
+        } else {
+            mybutton.style.display = "none";
         }
-        function topFunction() {
-            window.scrollTo({ top: 0, behavior: 'smooth' })
-            document.documentElement.scrollTo({ top: 0, behavior: 'smooth' })
-        }
+    }
 
-        document.addEventListener("DOMContentLoaded", () => {
-            document.querySelector('#mode').addEventListener('click',()=>{
-                document.querySelector('html').classList.toggle('dark');
-            })
-        });
+    function topFunction() {
+        window.scrollTo({top: 0, behavior: 'smooth'})
+        document.documentElement.scrollTo({top: 0, behavior: 'smooth'})
+    }
+
+    document.addEventListener("DOMContentLoaded", () => {
+        document.querySelector('#mode').addEventListener('click', () => {
+            document.querySelector('html').classList.toggle('dark');
+        })
+    });
 
 
-    </script>
+</script>
 
-    <div id="wrapper">
+<div id="wrapper">
 
-        <div id="mode" >
-            <div class="dark">
-                <svg aria-hidden="true" viewBox="0 0 512 512">
-                    <title>lightmode</title>
-                    <path fill="currentColor" d="M256 160c-52.9 0-96 43.1-96 96s43.1 96 96 96 96-43.1 96-96-43.1-96-96-96zm246.4 80.5l-94.7-47.3 33.5-100.4c4.5-13.6-8.4-26.5-21.9-21.9l-100.4 33.5-47.4-94.8c-6.4-12.8-24.6-12.8-31 0l-47.3 94.7L92.7 70.8c-13.6-4.5-26.5 8.4-21.9 21.9l33.5 100.4-94.7 47.4c-12.8 6.4-12.8 24.6 0 31l94.7 47.3-33.5 100.5c-4.5 13.6 8.4 26.5 21.9 21.9l100.4-33.5 47.3 94.7c6.4 12.8 24.6 12.8 31 0l47.3-94.7 100.4 33.5c13.6 4.5 26.5-8.4 21.9-21.9l-33.5-100.4 94.7-47.3c13-6.5 13-24.7.2-31.1zm-155.9 106c-49.9 49.9-131.1 49.9-181 0-49.9-49.9-49.9-131.1 0-181 49.9-49.9 131.1-49.9 181 0 49.9 49.9 49.9 131.1 0 181z"></path>
-                </svg>
-            </div>
-            <div class="light">
-                <svg aria-hidden="true" viewBox="0 0 512 512">
-                    <title>darkmode</title>
-                    <path fill="currentColor" d="M283.211 512c78.962 0 151.079-35.925 198.857-94.792 7.068-8.708-.639-21.43-11.562-19.35-124.203 23.654-238.262-71.576-238.262-196.954 0-72.222 38.662-138.635 101.498-174.394 9.686-5.512 7.25-20.197-3.756-22.23A258.156 258.156 0 0 0 283.211 0c-141.309 0-256 114.511-256 256 0 141.309 114.511 256 256 256z"></path>
-                </svg>
-            </div>
+    <div id="mode">
+        <div class="dark">
+            <svg aria-hidden="true" viewBox="0 0 512 512">
+                <title>lightmode</title>
+                <path fill="currentColor"
+                      d="M256 160c-52.9 0-96 43.1-96 96s43.1 96 96 96 96-43.1 96-96-43.1-96-96-96zm246.4 80.5l-94.7-47.3 33.5-100.4c4.5-13.6-8.4-26.5-21.9-21.9l-100.4 33.5-47.4-94.8c-6.4-12.8-24.6-12.8-31 0l-47.3 94.7L92.7 70.8c-13.6-4.5-26.5 8.4-21.9 21.9l33.5 100.4-94.7 47.4c-12.8 6.4-12.8 24.6 0 31l94.7 47.3-33.5 100.5c-4.5 13.6 8.4 26.5 21.9 21.9l100.4-33.5 47.3 94.7c6.4 12.8 24.6 12.8 31 0l47.3-94.7 100.4 33.5c13.6 4.5 26.5-8.4 21.9-21.9l-33.5-100.4 94.7-47.3c13-6.5 13-24.7.2-31.1zm-155.9 106c-49.9 49.9-131.1 49.9-181 0-49.9-49.9-49.9-131.1 0-181 49.9-49.9 131.1-49.9 181 0 49.9 49.9 49.9 131.1 0 181z"></path>
+            </svg>
         </div>
+        <div class="light">
+            <svg aria-hidden="true" viewBox="0 0 512 512">
+                <title>darkmode</title>
+                <path fill="currentColor"
+                      d="M283.211 512c78.962 0 151.079-35.925 198.857-94.792 7.068-8.708-.639-21.43-11.562-19.35-124.203 23.654-238.262-71.576-238.262-196.954 0-72.222 38.662-138.635 101.498-174.394 9.686-5.512 7.25-20.197-3.756-22.23A258.156 258.156 0 0 0 283.211 0c-141.309 0-256 114.511-256 256 0 141.309 114.511 256 256 256z"></path>
+            </svg>
+        </div>
+    </div>
 
-        <div class="container">
+    <div class="container">
 
-            <section id="top" class="section docs-heading">
-
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="big-title text-center">
-                            <h1>Your ThemeForest item Name</h1>
-                            <p class="lead">Your awesome theme / template documentation version 1.0</p>
-                        </div>
-                        <!-- end title -->
-                    </div>
-                    <!-- end 12 -->
-                </div>
-                <!-- end row -->
-
-                <hr>
-
-            </section>
-            <!-- end section -->
+        <section id="top" class="section docs-heading">
 
             <div class="row">
-
-                <div class="col-md-3">
-                    <nav class="docs-sidebar" data-spy="affix" data-offset-top="300" data-offset-bottom="200" role="navigation">
-                        <ul class="nav">
-                            <li><a href="#line1">Getting Started</a></li>
-                            <li><a href="#line2">How to Install WordPress</a></li>
-                            <li><a href="#line3">How to Install Theme</a></li>
-                            <li><a href="#line4">Necessary Plugins</a></li>
-                            <li><a href="#line5">Creating Blog Pages</a></li>
-                            <li><a href="#line6">Revolution Slider</a></li>
-                            <li><a href="#line7">How to Use Option Panel</a>
-                                <ul class="nav">
-                                    <li><a href="#line7_1">General Options</a></li>
-                                    <li><a href="#line7_2">Style Options</a></li>
-                                    <li><a href="#line7_3">Header Options</a></li>
-                                    <li><a href="#line7_4">Font Options</a></li>
-                                    <li><a href="#line7_5">Slider Options</a></li>
-                                    <li><a href="#line7_6">Page Options</a></li>
-                                    <li><a href="#line7_7">Import & Export</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="#line8">Support Desk</a></li>
-                            <li><a href="#line9">Files & Sources</a></li>
-                            <li><a href="#line10">Version History (Changelog)</a></li>
-                            <li><a href="#line11">Copyright and license</a></li>
-                        </ul>
-                    </nav >
+                <div class="col-md-12">
+                    <div class="big-title text-center">
+                        <h1>Documentações</h1>
+                        <p class="lead">Modelo template - Versão 1.0</p>
+                    </div>
+                    <!-- end title -->
                 </div>
-                <div class="col-md-9">
-                    <section class="welcome">
-
-                        <div class="row">
-                            <div class="col-md-12 left-align">
-                               <h2 class="dark-text">Introduction<hr></h2>
-                                <div class="row">
-
-                                    <div class="col-md-12 full">
-                                        <div class="intro1">
-                                            <ul>
-                                                <li><strong>Item Name : </strong>Gather Responsive Event Template</li>
-                                                <li><strong>Item Version : </strong> v 1.0</li>
-                                                <li><strong>Author  : </strong> <a href="http://themeforest.net/user/surjithctly" target="_blank">Surjith S M</a></li>
-                                                <li><strong>Support Forum : </strong> <a href="https://support.surjithctly.in/forums" target="_blank">https://support.surjithctly.in/forums</a></li>
-                                                <li><strong>License : </strong> <a href="#" target="_blank">Un License</a></li>
-                                            </ul>
-                                        </div>
-
-                                        <hr>
-                                        <div>
-                                            <p>First of all, Thank you so much for purchasing this template and for being my loyal customer.
-                                                <strong>You are awesome!</strong>
-                                                <br> You are entitled to get free lifetime updates to this product + exceptional support from the author directly.
-                                            </p>
-
-                                            <p>This documentation is to help you regarding each step of customization. Please go through the documentation carefully to understand how this template is made and how to edit this properly. Basic HTML and CSS knowledge is required to customize this template. You may learn basics <a href="http://www.w3schools.com/" target="_blank">here</a>, <a href="https://developer.mozilla.org/" target="_blank">here</a> and <a href="http://learn.shayhowe.com/html-css/building-your-first-web-page/" target="_blank">here</a>. </p>
-
-                                            <h4>Requirements</h4>
-                                            <p>You will need the following sofwares to customize this template.</p>
-                                            <ol>
-                                                <li>Code Editing Software (eg: Dreamweaver, Sublime Text or Notepad)</li>
-                                                <li>Web Browser for testing (eg: Google Chrome or Mozilla Firefox)</li>
-                                                <li>FTP Tool to upload files to Server (eg: <a href="https://filezilla-project.org/download.php?type=client" target="_blank">FileZilla</a>) </li>
-                                            </ol>
-                                            <div class="intro2 clearfix">
-                                                <p><i class="fa fa-exclamation-triangle"></i> Be careful while editing the template. If not edited properly, the design layout may break completely.
-                                                    <br> No support is provided for faulty customization.
-                                                </p>
-                                            </div>
-
-                                        </div>
-                                    </div>
-
-                                </div>
-                                <!-- end row -->
-                            </div>
-                        </div>
-                    </section>
-
-                    <section id="line1" class="section">
-
-                        <div class="row">
-                            <div class="col-md-12 left-align">
-                                <h2 class="dark-text">Getting Started <hr></h2>
-                            </div>
-                            <!-- end col -->
-                        </div>
-                        <!-- end row -->
-
-                        <div class="row">
-                            <div class="col-md-12">
-                                <p>Lorem the It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
-
-                                <h4>Bootstrap Grid System</h4>
-
-                                <pre class="brush: html; highlight: [2,4]">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                        YOUR CODES GOES HERE
-                                    </div>
-                                </div>
-                            </div></pre>
-
-                                <p>Our you can use the grid system with 2 columns like this;</p>
-
-                                <pre class="brush: html">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                                        YOUR CODES GOES HERE
-                                    </div>
-                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                                        YOUR CODES GOES HERE
-                                    </div>
-                                </div>
-                            </div>
-                         </pre>
-
-                                <p>Our you can use the grid system with 3 columns like this;</p>
-
-                                <pre class="brush: html">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
-                                        YOUR CODES GOES HERE
-                                    </div>
-                                    <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
-                                        YOUR CODES GOES HERE
-                                    </div>
-                                    <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
-                                        YOUR CODES GOES HERE
-                                    </div>
-                                </div>
-                            </div>
-                         </pre>
-                            </div>
-                            <!-- end col -->
-                        </div>
-                        <!-- end row -->
-
-                    </section>
-                    <!-- end section -->
-
-                    <section id="line2" class="section">
-
-                        <div class="row">
-                            <div class="col-md-12 left-align">
-                                <h2 class="dark-text">How to Install WordPress <hr></h2>
-                            </div>
-                            <!-- end col -->
-                        </div>
-                        <!-- end row -->
-
-                        <div class="intro2 clearfix">
-                            <p><i class="fa fa-wordpress"></i> Lorem the It is a long established fact that a reader will be distracted..
-                                <br> Please read more about WordPress here. <a href="#">WordPress Installation via FTP.</a> </p>
-                        </div>
-
-                        <hr>
-
-                        <h4>Upload via WordPress Admin</h4>
-
-                        <p>Lorem the It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
-
-                        <a href="#" class="btn btn-primary">Get a Installation Service</a> <a href="#" class="btn btn-info">Ask a Question</a>
-                        <hr>
-                        <div class="row">
-                            <div class="col-md-8 col-md-offset-2">
-                                <div class="media">
-                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/snFzbPm_RUE" frameborder="0" allowfullscreen></iframe>
-                                </div>
-                            </div>
-
-                        </div>
-
-                    </section>
-                    <!-- end section -->
-
-                    <section id="line3" class="section">
-
-                        <div class="row">
-                            <div class="col-md-12 left-align">
-                                <h2 class="dark-text">How to Install Theme <hr></h2>
-                            </div>
-                            <!-- end col -->
-                        </div>
-                        <!-- end row -->
-
-                        <h4>Upload via WordPress Admin</h4>
-
-                        <p>Lorem the It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
-
-                        <a href="#" class="btn btn-primary">Get a Installation Service</a> <a href="#" class="btn btn-info">Ask a Question</a>
-
-                        <hr>
-
-                        <h4>Upload via FTP Server</h4>
-
-                        <p>Lorem the It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
-
-                        <a href="#" class="btn btn-primary">Get a Installation Service</a> <a href="#" class="btn btn-info">Ask a Question</a>
-                        <hr>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="media">
-                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/yQnQyI5WlKs" frameborder="0" allowfullscreen></iframe>
-                                </div>
-
-                            </div>
-                            <div class="col-md-6">
-                                <div class="media">
-                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/z0kEVwJB_go" frameborder="0" allowfullscreen></iframe>
-                                </div>
-
-                            </div>
-                        </div>
-
-                    </section>
-                    <!-- end section -->
-
-                    <section id="line4" class="section">
-
-                        <div class="row">
-                            <div class="col-md-12 left-align">
-                                <h2 class="dark-text">Necessary Plugins <hr></h2>
-                            </div>
-                            <!-- end col -->
-                        </div>
-                        <!-- end row -->
-
-                        <div class="row">
-                            <div class="col-md-4">
-                                <img src="images/upload/plugin1.png" alt="" class="img-responsive img-thumbnail">
-                                <h4>Plugin name #1</h4>
-                                <p>Lorem the It is a long established fact that a reader will be distracted.. Please read more about WordPress here.</p>
-                            </div>
-                            <!-- end col -->
-
-                            <div class="col-md-4">
-                                <img src="images/upload/plugin2.png" alt="" class="img-responsive img-thumbnail">
-                                <h4>Plugin name #2</h4>
-                                <p>Lorem the It is a long established fact that a reader will be distracted.. Please read more about WordPress here.</p>
-                            </div>
-                            <!-- end col -->
-
-                            <div class="col-md-4">
-                                <img src="images/upload/plugin3.png" alt="" class="img-responsive img-thumbnail">
-                                <h4>Plugin name #3</h4>
-                                <p>Lorem the It is a long established fact that a reader will be distracted.. Please read more about WordPress here.</p>
-                            </div>
-                            <!-- end col -->
-
-                            <div class="col-md-12">
-                                <p>Lorem the It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
-
-                                <div class="text-center">
-                                    <a href="#" class="btn btn-primary">Get a Installation Service</a> <a href="#" class="btn btn-info">Ask a Question</a>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- end row -->
-
-                    </section>
-                    <!-- end section -->
-
-                    <section id="line5" class="section">
-
-                        <div class="row">
-                            <div class="col-md-12 left-align">
-                                <h2 class="dark-text">Creating Blog Pages <hr></h2>
-                            </div>
-                            <!-- end col -->
-                        </div>
-                        <!-- end row -->
-
-                        <div class="row">
-
-                            <div class="col-md-12">
-                                <p>Lorem the It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
-                            </div>
-
-                            <div class="col-md-4">
-                                <a href="upload/thumbnail.png" data-rel="prettyPhoto"><img src="images/upload/thumbnail.png" alt="" class="img-responsive img-thumbnail"></a>
-                                <h4 id="line5_1">WordPress Blog Page -</h4>
-                                <ul>
-                                    <li><strong>Step 1</strong> - Lorem the It is a long established fact that a reader ease read more about WordPress here.</li>
-                                    <li><strong>Step 2</strong> - Lorem the It is a long established fact that a reader will be distracted.. Please read more about WordPress here.</li>
-                                    <li><strong>Step 3</strong> - Lorem the It is a long established fact that a read.</li>
-                                </ul>
-                            </div>
-                            <!-- end col -->
-
-                            <div class="col-md-4">
-                                <a href="upload/thumbnail.png" data-rel="prettyPhoto"><img src="images/upload/thumbnail.png" alt="" class="img-responsive img-thumbnail"></a>
-                                <h4 id="line5_2">Blog Post Sections -</h4>
-                                <p>Lorem the It is a long established fact that a reader will be distracted.. Please read more about WordPress here.</p>
-                                <ul>
-                                    <li><strong>Step 1</strong> - Lorem the It is a long established fact that a reader ease read more about WordPress here.</li>
-                                    <li><strong>Step 2</strong> - Lorem the It is a long established fact that a reader will be distracted.. Please read more about WordPress here.</li>
-                                    <li><strong>Step 3</strong> - Lorem the It is a long established fact that a read.</li>
-                                </ul>
-                            </div>
-                            <!-- end col -->
-
-                            <div class="col-md-4">
-                                <a href="upload/thumbnail.png" data-rel="prettyPhoto"><img src="images/upload/thumbnail.png" alt="" class="img-responsive img-thumbnail"></a>
-                                <h4 id="line5_3">Create Blog Gallery -</h4>
-                                <p>Lorem the It is a long established fact that a reader will be distracted.. Please read more about WordPress here.</p>
-                                <ul>
-                                    <li><strong>Step 1</strong> - Lorem the It is a long established fact that a reader ease read more about WordPress here.</li>
-                                    <li><strong>Step 2</strong> - Lorem the It is a long established fact that a reader will be distracted.. Please read more about WordPress here.</li>
-                                    <li><strong>Step 3</strong> - Lorem the It is a long established fact that a read.</li>
-                                </ul>
-                            </div>
-                            <!-- end col -->
-
-                        </div>
-                        <!-- end row -->
-
-                    </section>
-                    <!-- end section -->
-
-                    <section id="line6" class="section">
-
-                        <div class="row">
-                            <div class="col-md-12 left-align">
-                                <h2 class="dark-text">How to Install Revolution Slider <hr></h2>
-                            </div>
-                            <!-- end col -->
-                        </div>
-                        <!-- end row -->
-
-                        <div class="row">
-
-                            <div class="col-md-12">
-                                <p>Lorem the It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
-                            </div>
-
-                            <div class="col-md-6">
-                                <a href="upload/thumbnail.png" data-rel="prettyPhoto"><img src="images/upload/thumbnail.png" alt="" class="img-responsive img-thumbnail"></a>
-                                <h4>Installation Slider</h4>
-                                <ul>
-                                    <li><strong>Step 1</strong> - Lorem the It is a long established fact that a reader ease read more about WordPress here.</li>
-                                    <li><strong>Step 2</strong> - Lorem the It is a long established fact that a reader will be distracted.. Please read more about WordPress here.</li>
-                                    <li><strong>Step 3</strong> - Lorem the It is a long established fact that a read.</li>
-                                </ul>
-                            </div>
-                            <!-- end col -->
-
-                            <div class="col-md-6">
-                                <a href="upload/thumbnail.png" data-rel="prettyPhoto"><img src="images/upload/thumbnail.png" alt="" class="img-responsive img-thumbnail"></a>
-                                <h4>Updating Slider</h4>
-                                <p>Lorem the It is a long established fact that a reader will be distracted.. Please read more about WordPress here.</p>
-                                <ul>
-                                    <li><strong>Step 1</strong> - Lorem the It is a long established fact that a reader ease read more about WordPress here.</li>
-                                    <li><strong>Step 2</strong> - Lorem the It is a long established fact that a reader will be distracted.. Please read more about WordPress here.</li>
-                                    <li><strong>Step 3</strong> - Lorem the It is a long established fact that a read.</li>
-                                </ul>
-                            </div>
-                            <!-- end col -->
-
-                        </div>
-                        <!-- end row -->
-
-                    </section>
-                    <!-- end section -->
-
-                    <section id="line7" class="section">
-
-                        <div class="row">
-                            <div class="col-md-12 left-align">
-                                <h2 class="dark-text">How to Use Option Panel <hr></h2>
-                            </div>
-                            <!-- end col -->
-                        </div>
-                        <!-- end row -->
-
-                        <div class="row">
-                            <div class="col-md-4">
-                                <a href="upload/thumbnail.png" data-rel="prettyPhoto"><img src="images/upload/thumbnail.png" alt="" class="img-responsive img-thumbnail"></a>
-                            </div>
-
-                            <div class="col-md-8">
-                                <h4 id="line7_1">General Options - </h4>
-                                <p>Lorem the It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. long established fact that a reader will English.</p>
-                            </div>
-                            <!-- end col -->
-                        </div>
-                        <!-- end row -->
-
-                        <hr>
-
-                        <div class="row">
-                            <div class="col-md-4">
-                                <a href="upload/thumbnail.png" data-rel="prettyPhoto"><img src="images/upload/thumbnail.png" alt="" class="img-responsive img-thumbnail"></a>
-                            </div>
-
-                            <div class="col-md-8">
-                                <h4 id="line7_2">Style Options - </h4>
-                                <p>Lorem the It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. long established fact that a reader will English.</p>
-                            </div>
-                            <!-- end col -->
-                        </div>
-                        <!-- end row -->
-
-                        <hr>
-
-                        <div class="row">
-                            <div class="col-md-4">
-                                <a href="upload/thumbnail.png" data-rel="prettyPhoto"><img src="images/upload/thumbnail.png" alt="" class="img-responsive img-thumbnail"></a>
-                            </div>
-
-                            <div class="col-md-8">
-                                <h4 id="line7_3">Header Options - </h4>
-                                <p>Lorem the It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. long established fact that a reader will English.</p>
-                            </div>
-                            <!-- end col -->
-                        </div>
-                        <!-- end row -->
-
-                        <hr>
-
-                        <div class="row">
-                            <div class="col-md-4">
-                                <a href="upload/thumbnail.png" data-rel="prettyPhoto"><img src="images/upload/thumbnail.png" alt="" class="img-responsive img-thumbnail"></a>
-                            </div>
-
-                            <div class="col-md-8">
-                                <h4 id="line7_4">Font Options - </h4>
-                                <p>Lorem the It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. long established fact that a reader will English.</p>
-                            </div>
-                            <!-- end col -->
-                        </div>
-                        <!-- end row -->
-
-                        <hr>
-
-                        <div class="row">
-                            <div class="col-md-4">
-                                <a href="upload/thumbnail.png" data-rel="prettyPhoto"><img src="images/upload/thumbnail.png" alt="" class="img-responsive img-thumbnail"></a>
-                            </div>
-
-                            <div class="col-md-8">
-                                <h4 id="line7_5">Slider Options - </h4>
-                                <p>Lorem the It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. long established fact that a reader will English.</p>
-                            </div>
-                            <!-- end col -->
-                        </div>
-                        <!-- end row -->
-
-                        <hr>
-
-                        <div class="row">
-                            <div class="col-md-4">
-                                <a href="upload/thumbnail.png" data-rel="prettyPhoto"><img src="images/upload/thumbnail.png" alt="" class="img-responsive img-thumbnail"></a>
-                            </div>
-
-                            <div class="col-md-8">
-                                <h4 id="line7_6">Page Options - </h4>
-                                <p>Lorem the It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. long established fact that a reader will English.</p>
-                            </div>
-                            <!-- end col -->
-                        </div>
-                        <!-- end row -->
-
-                        <hr>
-
-                        <div class="row">
-                            <div class="col-md-4">
-                                <a href="upload/thumbnail.png" data-rel="prettyPhoto"><img src="images/upload/thumbnail.png" alt="" class="img-responsive img-thumbnail"></a>
-                            </div>
-
-                            <div class="col-md-8">
-                                <h4 id="line7_7">Import & Export Options - </h4>
-                                <p>Lorem the It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. long established fact that a reader will English.</p>
-                            </div>
-                            <!-- end col -->
-                        </div>
-                        <!-- end row -->
-
-                    </section>
-                    <!-- end section -->
-
-                    <section id="line8" class="section">
-
-                        <div class="row">
-                            <div class="col-md-12 left-align">
-                                <h2 class="dark-text">Support Desk <hr></h2>
-                            </div>
-                            <!-- end col -->
-                        </div>
-                        <!-- end row -->
-
-                        <div class="row">
-                            <div class="col-md-6">
-                                <p>Please remember you have purchased a very affordable theme and you have not paid for a full-time web design agency. Occasionally we will help with small tweaks, but these requests will be put on a lower priority due to their nature. Support is also 100% optional and we provide it for your connivence, so please be patient, polite and respectful.</p>
-
-                                <p>Please visit our <a href="http://themeforest.net/user/yourusername"><strong>profile page</strong></a> or ask question <a href="mailto:yourusername@gmail.com">@yourusername</a></p>
-
-                                <strong>Support for my items includes:</strong>
-                                <ul>
-                                    <li>* Responding to questions or problems regarding the item and its features</li>
-                                    <li>* Fixing bugs and reported issues</li>
-                                    <li>* Providing updates to ensure compatibility with new software versions</li>
-                                </ul>
-                                <strong>Item support does not include:</strong>
-                                <ul>
-                                    <li>* Customization and installation services</li>
-                                    <li>* Support for third party software and plug-ins</li>
-                                </ul>
-
-                            </div>
-
-                            <div class="col-md-6">
-                                <strong>Before seeking support, please...</strong>
-                                <ul>
-                                    <li>* Make sure your question is a valid Theme Issue and not a customization request.</li>
-                                    <li>* Make sure you have read through the documentation and any related video guides before asking support on how to accomplish a task.</li>
-                                    <li>* Make sure to double check the theme FAQs.</li>
-                                    <li>* Try disabling any active plugins to make sure there isn't a conflict with a plugin. And if there is this way you can let us know.</li>
-                                    <li>* If you have customized your theme and now have an issue, back-track to make sure you didn't make a mistake. If you have made changes and can't find the issue, please provide us with your changelog.</li>
-                                    <li>* Almost 80% of the time we find that the solution to people's issues can be solved with a simple "Google Search". You might want to try that before seeking support. You might be able to fix the issue yourself much quicker than we can respond to your request.</li>
-                                    <li>* Make sure to state the name of the theme you are having issues with when requesting support via ThemeForest.</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <!-- end row -->
-
-                    </section>
-                    <!-- end section -->
-
-                    <section id="line9" class="section">
-
-                        <div class="row">
-                            <div class="col-md-12 left-align">
-                                <h2 class="dark-text">Files & Sources <hr></h2>
-                            </div>
-                            <!-- end col -->
-                        </div>
-                        <!-- end row -->
-
-                        <div class="row">
-                            <div class="col-md-6">
-                                <strong>Included Stylesheets</strong>
-
-                                <p>These are the primary CSS files used for general front-end styling. Use these to customize your theme even further. All included JavaScript codes under <strong>yourthemename/css/</strong></p>
-
-                                <ul>
-                                    <li>1. style.css - Primary stylesheet</li>
-                                    <li>2. bootstrap.css - Bootstrap stylesheet</li>
-                                    <li>3. owl-carousel.css - OWL Carousel</li>
-                                    <li>4. fontawesome.css - FontAwesome Font Icons stylesheet</li>
-                                    <li>5. custom.css - Pathos Color Schemes stylesheet</li>
-                                    <li>6. prettyPhoto.css - Lightbox effect css file</li>
-                                    <li>7. flexslider.css - Flexslider css file</li>
-                                    <li>8. et-line.css - Elegant icons css file</li>
-                                    <li>9. carousel.css - OWL Carousel css file</li>
-                                    <li>10. animate.css - CSS3 animations css file</li>
-                                </ul>
-
-                            </div>
-
-                            <div class="col-md-6">
-                                <strong>Included JavaScript</strong>
-
-                                <p>These are the various attribution inks to the Javascript files included or modified to work with in this theme. All included JavaScript codes under <strong>yourthemename/js/</strong></p>
-
-                                <ul>
-                                    <li>1. bootstrap.js - Bootstrap JavaScript</li>
-                                    <li>2. custom.js - All JavaScript Plugins</li>
-                                    <li>3. retina.js - Retina JavaScript</li>
-                                    <li>4. jquery.js - Base JavaScript</li>
-                                    <li>5. prettyPhoto.js - Lightbox JavaScript</li>
-                                    <li>6. owl-carousel.js - Lightbox JavaScript</li>
-                                    <li>7. revslider.js - Revolution Slider JavaScript</li>
-                                    <li>8. flexslider.js - Flexslider JavaScript</li>
-                                    <li>9. awesome-grid.nin.js - Awesome grid portfolio JavaScript</li>
-                                    <li>10. circle.js - Coming soon page JavaScript</li>
-                                    <li>11. contact.js - Contact form validate JavaScript</li>
-                                    <li>12. isotope.js - Masonry Portfolio JavaScript</li>
-                                    <li>13. progress.js - Progress bar JavaScript</li>
-                                    <li>14. rotate.js - Text rotate effect JavaScript</li>
-                                    <li>15. wow.js - CSS3 animation JavaScript</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <!-- end row -->
-
-                    </section>
-                    <!-- end section -->
-
-                    <section id="line10" class="section">
-
-                        <div class="row">
-                            <div class="col-md-12 left-align">
-                                <h2 class="dark-text">Version History (Changelog) <hr></h2>
-                            </div>
-                            <!-- end col -->
-                        </div>
-                        <!-- end row -->
-
-                        <div class="row">
-                            <div class="col-md-12">
-
-                                <p>You can find the version history (changelog.txt) file on <strong>yourthemename-full.zip</strong> folder or you can check changelog on theme sale page.</p>
-                                <p>Once again, thank you so much for purchasing this theme. As I said at the beginning, I'd be glad to help you if you have any questions relating to this theme. No guarantees, but I'll do my best to assist. If you have a more general question relating to the themes on ThemeForest, you might consider visiting the forums and asking your question in the "Item Discussion" section.</p>
-
-                                <hr>
-
-                                <h4>Changelog</h4>
-
-                                <pre class="brush: html">
-
-                                        -----------------------------------------------------------------------------------------
-                                        Version 3.8.4 - May 7th, 2015
-                                        -----------------------------------------------------------------------------------------
-
-                                        - new revolution slider plugin version
-                                        - fixed security issue with xss vulnerability
-                                        - improved demo importer for certain server environments
-                                        - updated WooCommerce template files for the outdated message in system status
-                                        - added suhosin check in system status 
-                                        - added information that explains ZipArchive is required on your server for importing demos 
-                                        - portfolio Grid template improvement
-                                        - added more information to demo popup message for individual demo requirements
-                                        - RTL style improvements
-                                        - breadcrumb function improved for various areas
-
-                                        -----------------------------------------------------------------------------------------
-                                        Version 3.8.3 - May 7th, 2015
-                                        -----------------------------------------------------------------------------------------
-                                        - fixed responsive / retina issue for larger logos
-                                        - fusion slider now uses responsive headings all the time
-                                        - dropped custom Avada styles for select boxes in IE since it is not supported
-                                        - fixed compatibility issue with Category Order and Taxonomy Terms Order plugin
-                                        - fixed issue of full width background being affected by padding options
-                                        - tested and fixed hellobar issue 
-                                        - typography settings now apply to single post pages
-                                        - improved smooth scroll in certain situations
-                                        - youtube & vimeo videos will show at normal size in light box as long as video embed link is not used
-                                        - fixed issue of â€œfixedâ€ featured image mode not working for carousels / recent work
-                                        - fixed issue of header tagline font not working with font options
-
-                                        -----------------------------------------------------------------------------------------
-                                        Version 3.8.2 - May 7th, 2015
-                                        -----------------------------------------------------------------------------------------
-                                        - fixed formatting issues with Turkish language files 
-                                        - letter spacing menu option improvement
-                                        - improved fusion slider max content width setting
-                                        - removed the â€œdisable first featured image on productsâ€ setting since it does not apply
-                                        - improved portfolio featured image loading
-                                        - removed encoding from tracking code, space before head, space before body, and custom CSS to stop it from parsing code within TO and removing special characters e.g. +
-                                        - woo login box now shows login fields for logged out users
-                                        - woo cart / my account links now show on mobile 
-                                        - fixed button styling issue with gravity forms
-
-
-                                      </pre>
-
-                            </div>
-                        </div>
-                        <!-- end row -->
-
-                    </section>
-                    <!-- end section -->
-
-                    <section id="line11" class="section">
-
-                        <div class="row">
-                            <div class="col-md-12 left-align">
-                                <h2 class="dark-text">Copyright and license <hr></h2>
-                            </div>
-                            <!-- end col -->
-                        </div>
-                        <!-- end row -->
-
-                        <div class="row">
-                            <div class="col-md-12">
-                                
-                                <p>Code released under the <a href="#" target="_blank">Un License</a> License.</p>                        
-                                <p>For more information about copyright and license check <a href=" https://choosealicense.com/licenses/unlicense/" target="_blank">choosealicense.com</a>.</p>
-                            
-                            </div>
-                        </div>
-                        <!-- end row -->
-
-                    </section>
-                    <!-- end section -->
-                </div>
-                <!-- // end .col -->
-
+                <!-- end 12 -->
             </div>
-            <!-- // end .row -->
+            <!-- end row -->
+
+            <hr>
+
+        </section>
+        <!-- end section -->
+
+        <div class="row">
+
+            <div class="col-md-3">
+                <nav class="docs-sidebar" data-spy="affix" data-offset-top="300" data-offset-bottom="200"
+                     role="navigation">
+                    <ul class="nav">
+                        <li><a href="#line1">Linguagem de Programação</a></li>
+                        <li><a href="#line2">Python</a></li>
+                        <li><a href="#line3">PHP</a></li>
+                        <li><a href="#line4">Javascript</a></li>
+                        <li><a href="#line5">Linguagem de Marcação</a></li>
+                        <li><a href="#line6">Linguagem de Estilização</a></li>
+                        <li><a href="#line7">Outras Documentações</a>
+                            <ul class="nav">
+                                <li><a href="#line7_1">Opções 1 -</a></li>
+                                <li><a href="#line7_2">Opções 2 - </a></li>
+                                <li><a href="#line7_3">Opções 3 - </a></li>
+                                <li><a href="#line7_4">Opções 4 - </a></li>
+                                <li><a href="#line7_5">Opções 5 - </a></li>
+                                <li><a href="#line7_6">Opções 6 - </a></li>
+                                <li><a href="#line7_7">Opções 7 - </a></li>
+                            </ul>
+                        </li>
+<!--                        <li><a href="#line8">Suporte</a></li>-->
+                        <li><a href="#line9">Arquivos e links</a></li>
+                        <li><a href="#line10">Features (Changelog)</a></li>
+                        <li><a href="#line11">Copyright e licença</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="col-md-9">
+                <section class="welcome">
+
+                    <div class="row">
+                        <div class="col-md-12 left-align">
+                            <h2 class="dark-text">Introdução
+                                <hr>
+                            </h2>
+                            <div class="row">
+
+                                <div class="col-md-12 full">
+                                    <div class="intro1">
+                                        <ul>
+                                            <li><strong>Doc : </strong>Linguagens</li>
+                                            <li><strong>Versão : </strong> v 1.0</li>
+                                            <li><strong>Autor : </strong> <a href="https://github.com/pattuzzoj"
+                                                                             target="_blank">Júlio Patuzzo</a></li>
+                                            <li><strong>Contato : </strong> <a
+                                                    href="https://api.whatsapp.com/send/?phone=5527996184548&text&type=phone_number&app_absent=0"
+                                                    target="_blank">Whatsapp</a></li>
+                                            <!--                                                <li><strong>licença : </strong> <a href="#" target="_blank">Un License</a></li>-->
+                                        </ul>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                            <!-- end row -->
+                        </div>
+                    </div>
+                </section>
+
+                <section id="line1" class="section">
+
+                    <div class="row">
+                        <div class="col-md-12 left-align">
+                            <h2 class="dark-text">Início
+                                <hr>
+                            </h2>
+                        </div>
+                        <!-- end col -->
+                    </div>
+                    <!-- end row -->
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <p>A linguagem de programação é uma linguagem formal; sustentada pela Matemática, ela possui sintaxe e semântica, que regem e definem o uso de palavras reservadas à linguagem, permitindo a criação de algoritmos que visam solucionar algum problema.
+                            </p>
+
+                            <h4>Linguagem de Programação</h4>
+
+
+                            <pre class="brush: html">
+
+A linguagem de programação é uma linguagem formal; sustentada pela Matemática, ela possui sintaxe e semântica, que regem e definem o uso de palavras reservadas à linguagem, permitindo a criação de algoritmos que visam solucionar algum problema.
+
+Linguagem de Alto Nível: uma linguagem de programação que se aproxima da linguagem humana, como o Portugol, uma linguagem de programação focada no ensino.
+Linguagem de Baixo Nível: uma linguagem de programação que se aproxima da linguagem de máquina, como o Assembly.
+Linguagem de Máquina: a linguagem de máquina é composta pelos dígitos 1 e 0. A combinação desses números formam bytes, que definidos, formam as instruções internas do processador.
+
+
+Algoritmo:
+Um algoritmo é formado por um ou mais passos lógicos que visa a obtenção de um resultado. São exemplos de algoritmos as operações aritméticas, onde se segue regras para a realização de cálculos matemáticos.
+
+
+Palavras Reservadas:
+Palavras reservadas funcionam como blocos de construção e estruturam as linguagens de programação. São palavras reservadas para uso pela linguagem, portanto não podem ser utilizadas para a criação de variáveis ou funções.
+
+
+Sintaxe e Semântica:
+A sintaxe define um conjunto de regras que visa o uso correto das palavras reservadas na criação de código. Depois do código ser escrito, uma verificação é feita para checar se a sintaxe está de acordo com o esperado.
+A semântica trata-se do significado agregado às palavras reservadas da linguagem e a relação que possuem entre si.
+
+
+Código-fonte:
+O código-fonte é a versão do código em seu estado puro, formado por algoritmos e estruturado utilizando as palavras reservadas da linguagem.
+
+
+Paradigma de Programação
+Paradigmas de Programação são formas de classificação das linguagens, que por suas características podem ser definidas e agrupadas em diferentes paradigmas. Uma linguagem pode ser classificada em vários paradigmas.
+
+Alguns exemplos são:
+Paradigma Imperativo: no paradigma imperativo as instrunções são codificadas de forma sequencial, de cima para baixo, seguindo uma ordem lógica.
+Paradigma Declarativo:
+
+
+Depurador
+O depurador é um programa que analisa o código-fonte e verifica a existência de inconsistências (erros) nas intruções, como palavras reservadas usadas de forma incorreta.
+
+
+Interpretador e Compilador:
+Tanto o interpretador quanto o compilador são programas que analisam e traduzem o código-fonte de uma linguagem de programação de alto nível para a linguagem de máquina. Geralmente uma linguagem de programação é interpretada ou compilada, mas há casos onde ocorre a compilação para uma linguagem intermediária e depois a interpretação para a linguagem de máquina.
+
+A diferença entre o interpretador e o compilador, é que o interpretador traduz e executa a cada linha de instrução, perdendo sua tradução anterior; enquanto o compilador traduz todas as instruções primeiro e depois executa, salvando a tradução.
+
+
+Comentários:
+Comentários em um código-fonte servem para descrever trechos de código para facilitar o seu entendimento e sua posterior manutenção, pelo próprio programador ou por outro.
+
+
+Escopo:
+O escopo são as áreas do código. Ela delimita até onde certas instruções são "visíveis", como variáveis e funções.
+
+
+Variáveis:
+Variáveis, em arquitetura de computadores, são etiquetas (nomes) que estão associadas a um endereço na memória principal (nos computadores comuns é a memória RAM); esta é uma definição mais técnica do que é uma variável, veremos agora uma definição mais tangível.
+Variáveis são como contêineres de navios. Possuem um identificador (em nosso caso, um nome); um tamanho e um tipo específico de mercadoria, o qual entendemos como "tipo de dado". Nós abrimos a porta do container e atribuimos um dado a variável com o operador de atribuição (o sinal de '=' é geralmente utilizado para isso nas linguagens modernas).
+
+
+Tipos de Variáveis:
+var: é uma variável global que tem validade independente do escopo em que estiver.
+let: é uma variável local que só tem validade dentro do escopo em que foi declarada, como em um escopo de função.
+const: é uma variável constante que possui o seu valor fixo, não passível de alteração.
+
+Tipagem:
+Tipos de Dados:
+Boolean: baseado na lógica booleana, representa valores verdadeiros ou falsos.
+Number: representa números; inteiros ou com ponto decimal.
+BigInt: representa exclusivamente números inteiros, mas de comprimento arbitrário.
+String: representa uma cadeia de caracteres.
+Object: representa um objeto.
+Undefined: representa um valor ainda não definido.
+Null: representa o vazio, é um valor nulo.
+
+Estruturas de dados:
+Caracteres de Escape:
+Entrada e Saída de Dados:
+
+
+Operadores:
+Operadores agem como funções e operam sobre operandos (valores) realizando operações(cálculos, comparações etc).
+Operador unário: possui 1 operando
+Operador binário: possui 2 operandos
+
+
+Estruturas de Condição:
+Estruturas condicionais são estruturas que controlam o fluxo de execução de um programa, permitindo a bifurcação no fluxo de execução; ou seja, permite o controle e permite a execução de trechos de códigos diferentes dependendo da condição.
+
+
+Estruturas de Repetição:
+Estruturas de repetição são estruturas que permitem a repetição de instruções.
+
+
+Funções e Parâmetros:
+Funções são sub-rotinas, ações programadas para execução conforme demanda, tendo ou não parâmetros especificados na sua chamada; formada por um conjunto de instruções, elas realizam tarefas pré-determinadas.
+Parâmetros são variáveis locais definidas entre os parênteses no tempo de declaração e representam as características passíveis de alteração.
+Argumentos são os valores passados para a função e representam os parâmetros.
+
+
+Funções Built-in:
+Funções "Built-in" são funções embutidas na linguagem, prontas para uso pelo programador, como funções de entrada e saída e conversores de tipos de dados, entre outras.
+Ex.:
+console.log(): é uma função de saída que exibe valores no console do navegador.
+alert(): é uma função de saída que exibe valores em uma janela interativa.
+confirm(): é uma função de entrada e saída, onde há o pedido de confirmação de um dado ao usuário em uma janela interativa.
+prompt(): é uma função de entrada e saída, onde há uma saída e o usuário pode inserir dados em uma janela interativa.
+String(): é uma função de conversão de dados, converte valores em uma cadeia de caracteres.
+Number(): é uma função de conversão de dados, converte valores em números.
+Boolean(): é uma função de conversão de dados, converte valores em um valor booleano.
+
+
+Classes:
+    Programação Orientada a Objetos:
+    Métodos:
+    Construtores:
+    Encapsulamento:
+    Herança:
+    Polimorfismo:
+Testes:
+Frameworks:
+Bibliotecas:
+Linguagens e Seus Usos:
+                            </pre>
+
+
+                            <h3>Linguagem de Programação</h3>
+                            <pre class="brush: html">
+Algoritmo
+Palavras Reservadas
+Sintaxe e Semântica
+Código-fonte
+Paradigma de Programação
+Depurador
+Interpretador e Compilador
+Funções: Built-in--
+Comentários
+Escopo
+Variáveis
+    Tipos de Variáveis
+Tipagem
+Tipos de Dados
+Estruturas de dados
+Caracteres de Escape
+Entrada e Saída de Dados
+Operadores
+Estruturas de Condição
+Estruturas de Repetição
+Funções
+    Parâmetros
+Classes
+    Programação Orientada a Objetos
+    Métodos
+    Construtores
+    Encapsulamento
+    Herança
+    Polimorfismo
+Testes
+Framework
+Biblioteca
+Linguagens e Seus Usos
+                         </pre>
+
+
+
+                        </div>
+                        <!-- end col -->
+                    </div>
+                    <!-- end row -->
+
+                </section>
+                <!-- end section -->
+
+                <section id="line2" class=""> <!-- class section -->
+
+                    <div class="row">
+                        <div class="col-md-12 left-align">
+                            <h3 class="dark-text">Python
+                                <hr>
+                            </h3>
+                        </div>
+                        <!-- end col -->
+                    </div>
+                    <!-- end row -->
+
+                    <pre class="brush: html">
+# Linguagem de Programação
+A linguagem de programação Python é uma linguagem de alto nível.
+
+# Palavras Reservadas
+await      pass
+except     in         raise
+finally    is
+try
+as         nonlocal
+assert     global     with
+async      yield
+
+from: Define de onde o módulo será importado
+import: Define a importação de um módulo
+as: Define um nome para o módulo importado
+
+None: Define a ausência de um valor.
+
+True: Define o valor booleana VERDADEIRO
+False: Define o valor booleano FALSO
+
+not: Define a operação booleana de negação
+and: Define a operação booleana E
+or: Define a operação booleana OU
+
+if: Define uma estrutura de condição SE
+elif: Define uma estrutura de condição SENÃO SE
+else: Define uma estrutura de condição SENÃO
+
+for: Define uma estrutura de repetição PARA
+while: Define uma estrutura de repetição ENQUANTO
+
+def: Define uma função
+lambda: Define uma expressão para funções anônimas
+class: Define uma classe de objeto
+
+continue: Sai de um ciclo da estrutura
+break: Sai de uma estrutura
+
+return: Retorna o valor de uma função
+
+
+# Paradigmas
+Multiparadigma
+Programação Orientada a Objetos
+Programação Imperativa
+Programação Funcional
+
+
+# Tradução
+A linguagem Python é interpretada.
+
+
+# Comentários
+Linha: # conteúdo
+Multi-linha: """ conteúdo """
+
+
+# Tipagem
+Dinâmica
+Forte
+
+
+# Estruturas de Dados
+Lista: nome_da_variável = [valores]
+Dicionário:
+
+
+# Funções de Entrada e Saída de Dados
+Entrada: input()
+Saída: print()
+
+
+# Operadores Aritméticos
+Adição: +
+Subtração: -
+Multiplicação: *
+Divisão inteira: //
+Divisão decimal: /
+Resto: %
+Exponenciação: **
+
+# Operadores Lógicos
+Negação: not
+Conjunção: and
+Disjunção: or
+Negação em binário: ~
+Conjunção em binário: &
+Disjunção em binário: |
+Disjunção exclusiva em binário: ^
+Deslocamento direito em binário: >>
+Deslocamento esquerdo em binário: <<
+
+# Operadores de Atribuição
+Atribuição: =
+Atribuição com adição: +=
+Atribuição com subtração: -=
+Atribuição com multiplicação: *=
+Atribuição com divisão inteira: //=
+Atribuição com divisão decimal: /=
+Atribuição com resto: %=
+Atribuição com exponenciação: **=
+Atribuição conjuntiva em binário: &=
+Atribuição disjuntiva em binário: |=
+Atribuição disjuntiva exclusiva em binário: ^=
+Atribuição com deslocamento direito em binário: >>=
+Atribuição com deslocamento esquerdo em binário: <<=
+
+#  Operadores Relacionais
+Igual: ==
+Diferente: !=
+Maior que: >
+Menor que: <
+Maior ou igual >=
+Menor ou igual: <=
+
+
+# Estruturas de Condição
+Se: if condição: código
+Senão se: elif condição: código
+Senão: else: código
+
+
+# Estruturas de Repetição
+Enquanto: while condição: código
+Para: for declaração_de_variável in faixa_de_valores: código
+
+
+# Função
+Função: def nome_da_função (parâmetro): código
+
+
+# Funções Built-in
+max():
+min():
+sum():
+</pre>
+
+                    <hr>
+
+                    <hr>
+
+
+                </section>
+                <!-- end section -->
+
+                <section id="line3" class="section">
+
+                    <div class="row">
+                        <div class="col-md-12 left-align">
+                            <h2 class="dark-text">PHP
+                                <hr>
+                            </h2>
+                        </div>
+                        <!-- end col -->
+                    </div>
+                    <!-- end row -->
+
+                    <pre class="brush: html">
+#
+</pre>
+
+
+
+                </section>
+                <!-- end section -->
+
+                <section id="line4" class="section">
+
+                    <div class="row">
+                        <div class="col-md-12 left-align">
+                            <h2 class="dark-text">Javascript
+                                <hr>
+                            </h2>
+                        </div>
+                        <!-- end col -->
+                    </div>
+                    <!-- end row -->
+                </section>
+                <!-- end section -->
+
+                <section id="line5" class="section">
+
+                    <div class="row">
+                        <div class="col-md-12 left-align">
+                            <h2 class="dark-text">Linguagem de Marcação
+                                <hr>
+                            </h2>
+                        </div>
+                        <!-- end col -->
+                    </div>
+                    <!-- end row -->
+
+                </section>
+                <!-- end section -->
+
+                <section id="line6" class="section">
+
+                    <div class="row">
+                        <div class="col-md-12 left-align">
+                            <h2 class="dark-text">Linguagem de Estilização
+                                <hr>
+                            </h2>
+                        </div>
+                        <!-- end col -->
+                    </div>
+                    <!-- end row -->
+
+                    <div class="row">
+
+                        <div class="col-md-12">
+                            <p>Lorem the It is a long established fact that a reader will be distracted by the readable
+                                content of a page when looking at its layout. The point of using Lorem Ipsum is that it
+                                has a more-or-less normal distribution of letters, as opposed to using 'Content here,
+                                content here', making it look like readable English. long established fact that a reader
+                                will be distracted by the readable content of a page when looking at its layout. The
+                                point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters,
+                                as opposed to using 'Content here, content here', making it look like readable
+                                English.</p>
+                        </div>
+
+                    </div>
+                    <!-- end row -->
+
+                </section>
+                <!-- end section -->
+
+                <section id="line7" class="section">
+
+                    <div class="row">
+                        <div class="col-md-12 left-align">
+                            <h2 class="dark-text">Outras Documentações
+                                <hr>
+                            </h2>
+                        </div>
+                        <!-- end col -->
+                    </div>
+                    <!-- end row -->
+
+                    <div class="row">
+                        <div class="col-md-4">
+                            <a href="upload/thumbnail.png" data-rel="prettyPhoto"><img src="images/upload/thumbnail.png"
+                                                                                       alt=""
+                                                                                       class="img-responsive img-thumbnail"></a>
+                        </div>
+
+                        <div class="col-md-8">
+                            <h4 id="line7_1">Opções - </h4>
+                            <p>Lorem the It is a long established fact that a reader will be distracted by the readable
+                                content of a page when looking at its layout. The point of using Lorem Ipsum is that it
+                                has a more-or-less normal distribution of letters, as opposed to using 'Content here,
+                                content here', making it look like readable English. long established fact that a reader
+                                will English.</p>
+                        </div>
+                        <!-- end col -->
+                    </div>
+                    <!-- end row -->
+
+                    <hr>
+
+                    <div class="row">
+                        <div class="col-md-4">
+                            <a href="upload/thumbnail.png" data-rel="prettyPhoto"><img src="images/upload/thumbnail.png"
+                                                                                       alt=""
+                                                                                       class="img-responsive img-thumbnail"></a>
+                        </div>
+
+                        <div class="col-md-8">
+                            <h4 id="line7_2">Opções - </h4>
+                            <p>Lorem the It is a long established fact that a reader will be distracted by the readable
+                                content of a page when looking at its layout. The point of using Lorem Ipsum is that it
+                                has a more-or-less normal distribution of letters, as opposed to using 'Content here,
+                                content here', making it look like readable English. long established fact that a reader
+                                will English.</p>
+                        </div>
+                        <!-- end col -->
+                    </div>
+                    <!-- end row -->
+
+                    <hr>
+
+                    <div class="row">
+                        <div class="col-md-4">
+                            <a href="upload/thumbnail.png" data-rel="prettyPhoto"><img src="images/upload/thumbnail.png"
+                                                                                       alt=""
+                                                                                       class="img-responsive img-thumbnail"></a>
+                        </div>
+
+                        <div class="col-md-8">
+                            <h4 id="line7_3">Opções - </h4>
+                            <p>Lorem the It is a long established fact that a reader will be distracted by the readable
+                                content of a page when looking at its layout. The point of using Lorem Ipsum is that it
+                                has a more-or-less normal distribution of letters, as opposed to using 'Content here,
+                                content here', making it look like readable English. long established fact that a reader
+                                will English.</p>
+                        </div>
+                        <!-- end col -->
+                    </div>
+                    <!-- end row -->
+
+                    <hr>
+
+                    <div class="row">
+                        <div class="col-md-4">
+                            <a href="upload/thumbnail.png" data-rel="prettyPhoto"><img src="images/upload/thumbnail.png"
+                                                                                       alt=""
+                                                                                       class="img-responsive img-thumbnail"></a>
+                        </div>
+
+                        <div class="col-md-8">
+                            <h4 id="line7_4">Opções - </h4>
+                            <p>Lorem the It is a long established fact that a reader will be distracted by the readable
+                                content of a page when looking at its layout. The point of using Lorem Ipsum is that it
+                                has a more-or-less normal distribution of letters, as opposed to using 'Content here,
+                                content here', making it look like readable English. long established fact that a reader
+                                will English.</p>
+                        </div>
+                        <!-- end col -->
+                    </div>
+                    <!-- end row -->
+
+                    <hr>
+
+                    <div class="row">
+                        <div class="col-md-4">
+                            <a href="upload/thumbnail.png" data-rel="prettyPhoto"><img src="images/upload/thumbnail.png"
+                                                                                       alt=""
+                                                                                       class="img-responsive img-thumbnail"></a>
+                        </div>
+
+                        <div class="col-md-8">
+                            <h4 id="line7_5">Opções - </h4>
+                            <p>Lorem the It is a long established fact that a reader will be distracted by the readable
+                                content of a page when looking at its layout. The point of using Lorem Ipsum is that it
+                                has a more-or-less normal distribution of letters, as opposed to using 'Content here,
+                                content here', making it look like readable English. long established fact that a reader
+                                will English.</p>
+                        </div>
+                        <!-- end col -->
+                    </div>
+                    <!-- end row -->
+
+                    <hr>
+
+                    <div class="row">
+                        <div class="col-md-4">
+                            <a href="upload/thumbnail.png" data-rel="prettyPhoto"><img src="images/upload/thumbnail.png"
+                                                                                       alt=""
+                                                                                       class="img-responsive img-thumbnail"></a>
+                        </div>
+
+                        <div class="col-md-8">
+                            <h4 id="line7_6">Opções - </h4>
+                            <p>Lorem the It is a long established fact that a reader will be distracted by the readable
+                                content of a page when looking at its layout. The point of using Lorem Ipsum is that it
+                                has a more-or-less normal distribution of letters, as opposed to using 'Content here,
+                                content here', making it look like readable English. long established fact that a reader
+                                will English.</p>
+                        </div>
+                        <!-- end col -->
+                    </div>
+                    <!-- end row -->
+
+                    <hr>
+
+                    <div class="row">
+                        <div class="col-md-4">
+                            <a href="upload/thumbnail.png" data-rel="prettyPhoto"><img src="images/upload/thumbnail.png"
+                                                                                       alt=""
+                                                                                       class="img-responsive img-thumbnail"></a>
+                        </div>
+
+                        <div class="col-md-8">
+                            <h4 id="line7_7">Opções - </h4>
+                            <p>Lorem the It is a long established fact that a reader will be distracted by the readable
+                                content of a page when looking at its layout. The point of using Lorem Ipsum is that it
+                                has a more-or-less normal distribution of letters, as opposed to using 'Content here,
+                                content here', making it look like readable English. long established fact that a reader
+                                will English.</p>
+                        </div>
+                        <!-- end col -->
+                    </div>
+                    <!-- end row -->
+
+                </section>
+                <!-- end section -->
+
+                <section id="line8" class="section">
+<!--                    Seção 8-->
+
+                </section>
+                <!-- end section -->
+
+                <section id="line9" class="section">
+
+                    <div class="row">
+                        <div class="col-md-12 left-align">
+                            <h2 class="dark-text">Arquivos e links
+                                <hr>
+                            </h2>
+                        </div>
+                        <!-- end col -->
+                    </div>
+                    <!-- end row -->
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <strong>Included Stylesheets</strong>
+
+
+                            <ul>
+                                <li>1. style.css - Primary stylesheet</li>
+                                <li>2. bootstrap.css - Bootstrap stylesheet</li>
+                                <li>3. owl-carousel.css - OWL Carousel</li>
+                                <li>4. fontawesome.css - FontAwesome Font Icons stylesheet</li>
+                                <li>5. custom.css - Pathos Color Schemes stylesheet</li>
+                                <li>6. prettyPhoto.css - Lightbox effect css file</li>
+                                <li>7. flexslider.css - Flexslider css file</li>
+                                <li>8. et-line.css - Elegant icons css file</li>
+                                <li>9. carousel.css - OWL Carousel css file</li>
+                                <li>10. animate.css - CSS3 animations css file</li>
+                            </ul>
+
+                        </div>
+
+                        <div class="col-md-6">
+                            <strong>Included JavaScript</strong>
+
+                            <ul>
+                                <li>1. bootstrap.js - Bootstrap JavaScript</li>
+                                <li>2. custom.js - All JavaScript Plugins</li>
+                                <li>3. retina.js - Retina JavaScript</li>
+                                <li>4. jquery.js - Base JavaScript</li>
+                                <li>5. prettyPhoto.js - Lightbox JavaScript</li>
+                                <li>6. owl-carousel.js - Lightbox JavaScript</li>
+                                <li>7. revslider.js - Revolution Slider JavaScript</li>
+                                <li>8. flexslider.js - Flexslider JavaScript</li>
+                                <li>9. awesome-grid.nin.js - Awesome grid portfolio JavaScript</li>
+                                <li>10. circle.js - Coming soon page JavaScript</li>
+                                <li>11. contact.js - Contact form validate JavaScript</li>
+                                <li>12. isotope.js - Masonry Portfolio JavaScript</li>
+                                <li>13. progress.js - Progress bar JavaScript</li>
+                                <li>14. rotate.js - Text rotate effect JavaScript</li>
+                                <li>15. wow.js - CSS3 animation JavaScript</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- end row -->
+
+                </section>
+                <!-- end section -->
+
+                <section id="line10" class="section">
+
+
+                </section>
+                <!-- end section -->
+
+                <section id="line11" class="section">
+
+                    <div class="row">
+                        <div class="col-md-12 left-align">
+                            <h2 class="dark-text">
+                                <hr>
+                            </h2>
+                        </div>
+                        <!-- end col -->
+                    </div>
+                    <!-- end row -->
+
+                    <div class="row">
+                        <div class="col-md-12">
+
+
+                        </div>
+                    </div>
+                    <!-- end row -->
+
+                </section>
+                <!-- end section -->
+            </div>
+            <!-- // end .col -->
 
         </div>
-        <!-- // end container -->
+        <!-- // end .row -->
 
     </div>
-    <!-- end wrapper -->
+    <!-- // end container -->
 
-    <script src="js/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/retina.js"></script>
-    <script src="js/jquery.fitvids.js"></script>
-    <script src="js/wow.js"></script>
-    <script src="js/jquery.prettyPhoto.js"></script>
+</div>
+<!-- end wrapper -->
 
-    <!-- CUSTOM PLUGINS -->
-    <script src="js/custom.js"></script>
-    <script src="js/main.js"></script>
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/retina.js"></script>
+<script src="js/jquery.fitvids.js"></script>
+<script src="js/wow.js"></script>
+<script src="js/jquery.prettyPhoto.js"></script>
 
-    <script src="js/syntax-highlighter/scripts/shCore.js"></script>
-    <script src="js/syntax-highlighter/scripts/shBrushXml.js"></script>
-    <script src="js/syntax-highlighter/scripts/shBrushCss.js"></script>
-    <script src="js/syntax-highlighter/scripts/shBrushJScript.js"></script>
+<!-- CUSTOM PLUGINS -->
+<script src="js/custom.js"></script>
+<script src="js/main.js"></script>
+
+<script src="js/syntax-highlighter/scripts/shCore.js"></script>
+<script src="js/syntax-highlighter/scripts/shBrushXml.js"></script>
+<script src="js/syntax-highlighter/scripts/shBrushCss.js"></script>
+<script src="js/syntax-highlighter/scripts/shBrushJScript.js"></script>
 
 </body>
 
